@@ -2,6 +2,8 @@ FROM alpine:latest
 
 RUN apk update && apk add --no-cache \
     git \
+    gpg \
+    openssh \
     helix \
     nano
 

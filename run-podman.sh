@@ -1,4 +1,4 @@
 #!/bin/bash
-podman build -t git-env-image .
+podman build -t gitbox .
 
 podman run -it --rm --name docker-env gitbox

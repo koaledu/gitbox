@@ -1,4 +1,4 @@
 #!/bin/bash
-docker build -t git-env-image .
+docker build -t gitbox .
 
 docker run -it --rm --name docker-env gitbox

@@ -20,6 +20,16 @@ bash run-docker.sh
 bash run-podman.sh
 ```
 
+### Autenticación (Token de Acceso)
+GitHub requiere un Personal Access Token (PAT) para autenticarse, ya que el
+acceso mediante contraseña de usuario ha sido descontinuado.
+
+1. Cree su token desde la configuración de [GitHub Tokens](https://github.com/settings/tokens).
+2. Al realizar un `git push` o cualquier operación remota, se solicitará
+el nombre de usuario y la contraseña.
+    - **Usuario:** Su nombre de usuario de GitHub.
+    - **Contraseña:** Pegue el Token que generó (no use su contraseña personal).
+
 ## Configuración de Git
 Una vez dentro, recuerde configurar sus credenciales antes de empezar a trabajar:
 ```bash

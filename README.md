@@ -7,18 +7,27 @@ trabajar con Git de forma rápida. Incluye los editores `helix` y `nano`.
 - Tener instalado Docker o Podman.
 
 ## Cómo empezar
-Dependiendo del motor de contenedores que utilice, ejecute el script
-correspondiente desde su terminal:
+Ejecute los siguientes comandos en su terminal (Bash, PowerShell o CMD):
 
 ### Opción A: Usando Docker
-```bash
-bash run-docker.sh
-```
+1. Construir la imagen:
+   ```bash
+   docker build -t gitbox .
+   ```
+2. Ejecutar el contenedor:
+   ```bash
+   docker run -it --rm --name docker-env gitbox
+   ```
 
 ### Opción B: Usando Podman
-```bash
-bash run-podman.sh
-```
+1. Construir la imagen:
+   ```bash
+   podman build -t gitbox .
+   ```
+2. Ejecutar el contenedor:
+   ```bash
+   podman run -it --rm --name docker-env gitbox
+   ```
 
 ### Autenticación (Token de Acceso)
 GitHub requiere un Personal Access Token (PAT) para autenticarse, ya que el
